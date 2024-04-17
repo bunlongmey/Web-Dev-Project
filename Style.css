@@ -68,6 +68,15 @@ h4{
     letter-spacing: 2px;
     font-size: 20px;
 }
+
+.justified-text {
+    text-align: justify;
+}
+.start-cooking-button a {
+    color: floralwhite;
+}
+
+
 .button{
 position: absolute;
 background-color: #213032;
@@ -87,7 +96,7 @@ transform: .4s;
 .about{
     width: 100%;
     padding: 100px 0px;
-    background-color: #314e52;
+    background-color: #17364e;
 }
 .about img{
     height: auto;
@@ -120,11 +129,13 @@ transform: .4s;
 .about-text{
     width: 500px;
 }
+
+
 /*Recipe Section CSS*/
 .recipe{
     width: 100%;
     padding: 100px 0px;
-    background-color: #213032;
+    background-color: #748991;
 }
 .recipe h2{
     color: #edffef;
@@ -134,11 +145,11 @@ transform: .4s;
     margin-bottom: 20px;
     text-align: center;
 }
-.box{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center; /* This will center the content vertically within the grid cells */
+    justify-items: center; /* This will center the content horizontally within the grid cells */
 }
 .card{
     position: relative;
@@ -273,7 +284,7 @@ transform: .4s;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    background: #182f32;
+    background: #B87330;
 }
 .contact-info,.contact-form{
     width: 100%;
@@ -300,7 +311,7 @@ width: 100%;
 margin-bottom: 10px;
 }
 .contact-form button{
-    background-color: #213032;
+    background-color: #322121;
     color: #fff;
     text-decoration: none;
     border: 2px solid black;
@@ -321,8 +332,17 @@ margin-bottom: 10px;
 .contact-form input, .contact-form textarea{
     padding: 8px;
 }
+
 .contact-info p{
 padding: 15px;
+}
+
+.contact-info a {
+    color: #ffffff;
+}
+
+.contact-info a:hover {
+    color: #000000;
 }
 .social-icons{
     display: flex;
@@ -345,11 +365,19 @@ padding: 15px;
 }
 footer{
     padding: 20px 0;
-    background: #182f32;
+    background: #ffffff;
 }
 footer h5{
     font-size: 25px;
     margin-top: 10px;
     text-align: center;
     color: #97a2a3;
+}
+
+.AboutUs {
+    padding: 20px;
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
 }
